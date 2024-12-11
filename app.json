@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "Sabi Drivers",
+    "slug": "Sabi-Ride-Driver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Drivers-icon.jpg",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/image/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Drivers-icon.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCl0C26EuumGSi2C3f1jO7YHAfxNuGG0rg"
+        }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.milliHub.SabiDriver"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/image/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Show current location on map."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ead0bedf-99b1-481d-983b-232ddad4f8af"
+      }
+    }
+  }
+}
